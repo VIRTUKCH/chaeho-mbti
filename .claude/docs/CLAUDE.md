@@ -1,0 +1,15 @@
+# .claude/docs
+
+**책임:** 주제별 영구 가이드 모음. 각 하위 폴더는 하나의 주제를 독립적으로 다룬다.
+
+## 진입점 (주제별)
+
+- [01_context_engineering/](01_context_engineering/) — Claude Code 운영 원칙 (인덱스형 CLAUDE.md, 서브에이전트, 권한, 환각 방지, 워크플로우).
+- [02_psy/](02_psy/) — 심리학 기반 (현재 비어있음, TBD).
+- [03_toss_design/](03_toss_design/) — 토스 디자인·UX 분석.
+- [04_viral/](04_viral/) — 바이럴 콘텐츠 분석.
+
+## 비자명 제약
+
+- 각 주제 폴더는 `00_overview.md` 로 시작한다. 다른 폴더에서 인용할 때도 우선 `00_overview.md` 부터 링크 거는 게 안전.
+- 새 주제 추가 시 `NN_topic_name/` 패턴 유지 — 번호는 주제 그룹.
