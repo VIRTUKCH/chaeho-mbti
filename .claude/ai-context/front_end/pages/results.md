@@ -90,17 +90,23 @@
 
 ### 4-2. 색 팔레트 (고정, 16개 유형 동일)
 
-```
-배경        radial-gradient(ellipse at top, #2a1a4a → #150d2a → #0a0816)
-본문 텍스트  #f4eed8
-강조 금색    #ffd482  (코드, 킬러 박스 강조, 섹션 강조)
-강조 라벤더  #c8aaff  (태그 라벨, 섹션 타이틀)
-부드러운 글  #e9e0c2 / #efe6c8
-약한 글      #cfc5a6 / #7a7290
-보조 위험색  #ff9b9b (danger 매치)
-```
+> 색 토큰은 [@/.claude/ai-context/front_end/color/palette.md](../color/palette.md)가 단일 출처. 여기에는 결과 페이지 의미별 매핑만 기록. **hex 직박 금지, `var(--token)`만**.
 
-색은 유형마다 바꾸지 않는다. 일관성이 사이트 인식의 핵심.
+| 의미 | 토큰 | 용도 |
+|---|---|---|
+| 페이지 배경 | `--bg` | 카드 바깥 전체 (따뜻한 크림) |
+| 박스 면 | `--bg-surface` | 시나리오·매치 카드, 그리드 셀 |
+| 강한 박스 면 | `--bg-muted` | reframe, locked 박스 |
+| 강조 면 (액센트 위 텍스트) | `--accent` + `--text-on-accent` | killer 박스, primary 버튼 |
+| 강조 텍스트 | `--accent` | 코드(4글자), 태그, 섹션 타이틀, 매치 타입 |
+| 본문 텍스트 | `--text` | 제목, 시나리오 본문, reframe 본문 |
+| 보조 텍스트 | `--text-secondary` | 요약, locked 본문, 그리드 tagline |
+| 약한 텍스트 | `--text-muted` | pager 인덱스, footer 워터마크 |
+| 구분선 (약함) | `--border` | 박스 외곽선 기본 |
+| 구분선 (강함) | `--border-strong` | dashed 박스 (misheard, shareQuote), secondary 버튼 |
+| danger 매치 | `--danger` | 합 안 맞는 매치 텍스트/외곽선 |
+
+색은 유형마다 바꾸지 않는다. 일관성이 사이트 인식의 핵심. **인디고·차가운 톤 회피, 따뜻한 모카 베이스**.
 
 ### 4-3. 폰트/타이포
 
