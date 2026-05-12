@@ -1,6 +1,6 @@
 # 02_fe_react/src/styles
 
-**책임:** 전역 스타일. `:root` 토큰, reset, body 폰트.
+**책임:** 전역 스타일. reset, body 폰트, 팔레트 토큰 CSS 변수 정의.
 
 ## 진입점
 
@@ -9,4 +9,4 @@
 ## 비자명 제약
 
 - **컴포넌트 스타일은 여기에 두지 않는다.** 페이지·컴포넌트별 스타일은 같은 폴더에 `.module.css`로 (예: `../results/INFP.module.css`).
-- 다크 테마 전제. 결과지 배경(`#0e0a1f`)이 `index.html`의 `<meta name="theme-color">`와 동기화되어 있다 — 한 쪽 바꿀 거면 두 쪽 다.
+- **색은 [@/.claude/ai-context/front_end/color/palette.md](../../../.claude/ai-context/front_end/color/palette.md) 토큰만 쓴다.** `:root` 블록에 CSS 변수로 박고, 컴포넌트는 모두 `var(--token)`으로 참조. hex 직박 금지.
