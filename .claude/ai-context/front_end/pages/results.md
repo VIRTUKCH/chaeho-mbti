@@ -1,7 +1,7 @@
 # 결과 페이지 전략 — chaeho-mbti
 
 > 다른 AI/사람이 이 문서만 보고도 16개 결과 페이지를 동일한 톤·구조·디자인으로 만들 수 있게 하는 명세.
-> 근거: [.claude/docs/04_viral/](../../../docs/04_viral/) 리서치 (5단 카피 공식 + 한국식 공감 메커니즘).
+> 근거: [.claude/docs/04_심리_컨텐츠_시장_조사/](../../../docs/04_심리_컨텐츠_시장_조사/) 리서치 (5단 카피 공식 + 한국식 공감 메커니즘).
 
 ---
 
@@ -230,7 +230,7 @@ const handleShare = async () => {
 
 ## 부록 — 참조 파일
 
-- 리서치 근거: [.claude/docs/04_viral/](../../../docs/04_viral/)
+- 리서치 근거: [.claude/docs/04_심리_컨텐츠_시장_조사/](../../../docs/04_심리_컨텐츠_시장_조사/)
 - 구현 레퍼런스 (INFP 완성형): [02_fe_react/src/results/INFP.tsx](../../../../02_fe_react/src/results/INFP.tsx)
 - 공통 CSS: [02_fe_react/src/results/result-card.module.css](../../../../02_fe_react/src/results/result-card.module.css)
 - 라우팅 진입점: [02_fe_react/src/App.tsx](../../../../02_fe_react/src/App.tsx)

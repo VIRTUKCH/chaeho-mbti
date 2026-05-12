@@ -29,9 +29,9 @@
 ## 📚 컨텍스트 가이드
 
 - **🧭 컨텍스트 엔지니어링 원칙**: [@/.claude/docs/01_context_engineering/00_principles.md](.claude/docs/01_context_engineering/00_principles.md)
-- **🧠 심리학 기반 (15개 이론 비교)**: [@/.claude/docs/02_psy/00_overview.md](.claude/docs/02_psy/00_overview.md)
+- **🧠 심리학 기반**: [@/.claude/docs/02_심리_이론/](.claude/docs/02_심리_이론/) — 현재 비어있음, 재작성 대기
 - **🎨 토스 디자인**: [@/.claude/docs/03_toss_design/00_overview.md](.claude/docs/03_toss_design/00_overview.md)
-- **📈 바이럴 체크리스트**: [@/.claude/docs/04_viral/03_checklist.md](.claude/docs/04_viral/03_checklist.md)
+- **📈 심리 컨텐츠 시장 조사**: [@/.claude/docs/04_심리_컨텐츠_시장_조사/](.claude/docs/04_심리_컨텐츠_시장_조사/) — 현재 비어있음, 재작성 대기
 
 ## ⚡ 자주 사용하는 명령어
 

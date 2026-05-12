@@ -60,9 +60,9 @@ chaeho-mbti/
 │   ├── ai-context/            # ← 우리만의 추가, AI 가 선택 로드할 압축본
 │   ├── docs/                  # ← 우리만의 추가, 영구 가이드 (지금 이 디렉터리)
 │   │   ├── 01_context_engineering/  # Claude Code 운영 원칙
-│   │   ├── 02_psy/                  # 심리학 이론
+│   │   ├── 02_심리_이론/            # 심리학 이론
 │   │   ├── 03_toss_design/          # 토스 디자인
-│   │   └── 04_viral/                # 바이럴 체크리스트
+│   │   └── 04_심리_컨텐츠_시장_조사/ # 바이럴 체크리스트
 │   └── settings.json (예정)
 ├── .mcp.json (예정)
 ├── CLAUDE.md
