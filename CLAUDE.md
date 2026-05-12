@@ -1,0 +1,49 @@
+# 🤖 Claude Code 개발 지침
+
+**chaeho-mbti** — 기존 MBTI의 "공감되지 않는 결과" 문제를 정조준한 한국식 공감 성격 테스트. 트래픽 확보 → 광고 수익이 사업 모델.
+
+## 언어 및 커뮤니케이션 규칙
+
+- **기본 응답 언어**: 한국어
+- **코드 주석**: 한국어로 작성
+- **커밋 메시지**: 한국어로 작성
+- **문서화**: 한국어로 작성
+- **변수명/함수명**: 영어 (코드 표준 준수)
+
+## 🛠️ 핵심 기술 스택
+
+- **FE**: React 18 + TypeScript 5 + Vite 5
+- **Styling**: CSS Modules + 전역 `styles/global.css`
+- **Proxy**: nginx 1.27-alpine (리버스 프록시)
+- **Orchestration**: Docker Compose · `--profile feature` / `--profile dev`
+- **Host**: `*.atchu.co.kr` (Vite `allowedHosts`로 허용)
+
+## 📚 컨텍스트 가이드
+
+- **🧭 컨텍스트 엔지니어링 원칙**: [@/.claude/docs/01_context_engineering/01_principles.md](.claude/docs/01_context_engineering/01_principles.md)
+- **🧠 심리학 기반 (TBD)**: [@/.claude/docs/02_psy/](.claude/docs/02_psy/)
+- **🎨 토스 디자인**: [@/.claude/docs/03_toss_design/00_overview.md](.claude/docs/03_toss_design/00_overview.md)
+- **📈 바이럴 체크리스트**: [@/.claude/docs/04_viral/03_checklist.md](.claude/docs/04_viral/03_checklist.md)
+
+## ⚡ 자주 사용하는 명령어
+
+```bash
+# 작업 중 (HMR · http://localhost:4080)
+docker compose --profile feature up -d --build
+
+# 빌드 스냅샷 (http://localhost:4090)
+docker compose --profile dev up -d --build
+
+# 내림
+docker compose --profile feature down
+docker compose --profile dev down
+```
+
+## ✅ 작업 완료 체크리스트
+
+```bash
+cd 02_fe_react && npm run build          # 타입 + 빌드 통과 확인
+docker compose --profile feature up -d   # 실제 동작 확인
+```
+
+💡 **모든 디렉터리에 자기 책임을 적은 CLAUDE.md가 있다.** 파일 1:1 설명이 아니라 "이 폴더는 뭘 위한 곳인지 / 어디부터 보면 되는지 / 비자명한 제약은 뭔지"만 적힘.
