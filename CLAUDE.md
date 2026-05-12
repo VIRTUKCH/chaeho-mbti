@@ -29,7 +29,7 @@
 ## 📚 컨텍스트 가이드
 
 - **🧭 컨텍스트 엔지니어링 원칙**: [@/.claude/docs/01_context_engineering/00_principles.md](.claude/docs/01_context_engineering/00_principles.md)
-- **🧠 심리학 기반**: [@/.claude/docs/02_심리_이론/](.claude/docs/02_심리_이론/) — 현재 비어있음, 재작성 대기
+- **🧠 심리학 기반**: [@/.claude/docs/02_심리_이론/](.claude/docs/02_심리_이론/) — 4카드별 잠정 추천 박힘 (Sternberg TLS / FACES-IV / Davis IRI / BFI-2+HEXACO). 카피 박힌 다음 최종 확정.
 - **🎨 토스 디자인**: [@/.claude/docs/03_toss_design/00_overview.md](.claude/docs/03_toss_design/00_overview.md)
 - **📈 심리 컨텐츠 시장 조사**: [@/.claude/docs/04_심리_컨텐츠_시장_조사/](.claude/docs/04_심리_컨텐츠_시장_조사/) — 현재 비어있음, 재작성 대기
 
