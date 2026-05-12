@@ -1,3 +1,40 @@
+:root {
+  /* 표면 — 따뜻한 크림 */
+  --bg: #fbf9f5;
+  --bg-surface: #f4efe6;
+  --bg-muted: #e8dfd0;
+
+  /* 텍스트 — 워밍 그레이 (espresso) */
+  --text: #2a2520;
+  --text-secondary: #5b5043;
+  --text-muted: #9b8d7a;
+  --text-on-accent: #ffffff;
+
+  /* 구분선 */
+  --border: #e0d5c2;
+  --border-strong: #c9bca5;
+
+  /* 액센트 — 모카 브라운 (Mocha Mousse 계열) */
+  --accent: #8b5a2b;
+  --accent-hover: #6f4925;
+  --accent-pressed: #553820;
+  --accent-bg: #f4efe6;
+
+  /* 카드 식별 색 (모카 톤 안에서만 미세 변주) */
+  --card-love: #b8543e;
+  --card-family: #8a6d3b;
+  --card-empathy: #5b6f48;
+
+  /* 피드백 */
+  --success: #15803d;
+  --danger: #b91c1c;
+
+  /* 모바일 우선: 본문 16px+, 터치 타깃 44px+ */
+  --touch-min: 44px;
+  --radius-card: 16px;
+  --radius-pill: 999px;
+}
+
 *,
 *::before,
 *::after {
@@ -8,10 +45,12 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: #0a0816;
-  color: #f4eed8;
+  background: var(--bg);
+  color: var(--text);
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -23,4 +62,9 @@ body {
 button {
   font-family: inherit;
   cursor: pointer;
+  min-height: var(--touch-min);
+}
+
+a {
+  color: var(--accent);
 }

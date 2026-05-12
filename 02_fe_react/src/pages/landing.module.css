@@ -1,0 +1,127 @@
+.page {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 48px 20px 64px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tag {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  font-weight: 700;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-align: center;
+  color: var(--text);
+}
+
+.sub {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+  text-align: center;
+}
+
+.preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.previewCell {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.previewEmoji {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.previewLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.04em;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--text-on-accent);
+  border: none;
+  border-radius: 14px;
+  padding: 16px 18px;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  transition: transform 80ms ease, background 120ms ease;
+}
+
+.primary:hover {
+  background: var(--accent-hover);
+}
+.primary:active {
+  background: var(--accent-pressed);
+  transform: scale(0.985);
+}
+
+.secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.secondary:hover {
+  background: var(--bg-surface);
+}
+
+.notice {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.footer {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+}
