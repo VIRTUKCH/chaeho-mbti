@@ -2,15 +2,17 @@ import type { CardResult } from './types'
 
 // 백엔드 매핑: K-EQ (Baron-Cohen Empathy Quotient 한국판)
 // 4분위: 만렙(상위 25%) / 적정(중상) / 단단함(중하) / T발놈(하위 25%)
-// 사용자 카피는 학술 어휘 미사용. 우선순위는 셋 중 가장 낮음 (마지막에 다듬음).
+// 사용자 카피는 학술 어휘 미사용. "친구끼리의 나의 모습" 톤.
+// TODO: 현재 시나리오가 "친구가 울 때"에 편중돼 있음. 회식·단톡방·일상 만남 등
+//       친구 사이 일반 장면으로 확장할 여지 있음. 카피 1차 안 → 베타 N=20~30 검증 대기.
 
-export const EMPATHY_RESULTS: Record<string, CardResult> = {
+export const FRIEND_RESULTS: Record<string, CardResult> = {
   high: {
-    cardId: 'empathy',
+    cardId: 'friend',
     typeId: 'high',
     badge: '공감 만렙형',
     title: '"넌 남이 울면 너부터 울더라"',
-    killer: '남의 감정이 너 거랑 섞여서 너만 더 지침.',
+    killer: '친구 감정이 너 거랑 섞여서 너만 더 지침.',
     summary:
       '친구가 슬프면 너의 마음이 같이 무너진다. 누가 봐도 좋은 사람이지만, 본인은 늘 감정 쓰레기통 같은 기분. 잘 들어주는 게 너의 자산이자 너를 갉아먹는 함정.',
     scenarios: [
@@ -37,12 +39,12 @@ export const EMPATHY_RESULTS: Record<string, CardResult> = {
     ],
     reframeTitle: '너 자신부터 챙겨',
     reframeBody:
-      '남의 감정을 잘 읽는 건 재능 맞음. 근데 본인 감정도 똑같이 읽고 챙겨야 함. 너부터 비어 있으면 누구도 못 채워줘. 가끔 모른 척하는 거 죄 아님.',
-    shareCaption: '남이 울면 같이 우는 그 사람, 이거 너지',
+      '친구 감정을 잘 읽는 건 재능 맞음. 근데 본인 감정도 똑같이 읽고 챙겨야 함. 너부터 비어 있으면 누구도 못 채워줘. 가끔 모른 척하는 거 죄 아님.',
+    shareCaption: '친구가 울면 같이 우는 그 사람, 이거 너지',
   },
 
   low: {
-    cardId: 'empathy',
+    cardId: 'friend',
     typeId: 'low',
     badge: 'T발놈형',
     title: '"너 진짜 T발놈이라더라"',
@@ -78,7 +80,7 @@ export const EMPATHY_RESULTS: Record<string, CardResult> = {
   },
 
   midHigh: {
-    cardId: 'empathy',
+    cardId: 'friend',
     typeId: 'midHigh',
     badge: '균형 공감자형',
     title: '"넌 들어주면서 선도 잘 긋더라"',
@@ -114,7 +116,7 @@ export const EMPATHY_RESULTS: Record<string, CardResult> = {
   },
 
   midLow: {
-    cardId: 'empathy',
+    cardId: 'friend',
     typeId: 'midLow',
     badge: '단단한 마음형',
     title: '"넌 잘 흔들리진 않는데, 가끔 차갑다 소리 듣지"',
@@ -124,7 +126,7 @@ export const EMPATHY_RESULTS: Record<string, CardResult> = {
     scenarios: [
       {
         icon: '🌪️',
-        label: '회사 위기 상황',
+        label: '친구 모임 위기',
         text: '다 패닉인데 너만 멀쩡함. "일단 이거부터 합시다" 첫 마디 나옴.',
       },
       {
@@ -150,4 +152,4 @@ export const EMPATHY_RESULTS: Record<string, CardResult> = {
   },
 }
 
-export const EMPATHY_DEFAULT_TYPE = 'high'
+export const FRIEND_DEFAULT_TYPE = 'high'

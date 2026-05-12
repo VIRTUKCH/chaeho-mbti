@@ -57,8 +57,11 @@
 .headerCardFamily {
   border-top-color: var(--card-family);
 }
-.headerCardEmpathy {
-  border-top-color: var(--card-empathy);
+.headerCardFriend {
+  border-top-color: var(--card-friend);
+}
+.headerCardWork {
+  border-top-color: var(--card-work);
 }
 
 .headerEmoji {

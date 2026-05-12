@@ -12,9 +12,9 @@ export default function Landing({ onStart, onDemo }: Props) {
       <div className={styles.wrap}>
         <span className={styles.tag}>채호 MBTI · 한국식 공감 성격 테스트</span>
         <h1 className={styles.title}>
-          연애·가족·공감,
+          연애·가족·친구·직장(학교),
           <br />
-          세 장으로 너를 보여줄게
+          네 장으로 너를 보여줄게
         </h1>
         <p className={styles.sub}>
           기존 MBTI가 안 짚어준 자리들. 한 번에 한 장씩 펴서 확인해.

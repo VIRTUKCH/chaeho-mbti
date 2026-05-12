@@ -14,7 +14,8 @@ type Props = {
 const HEADER_VARIANT: Record<CardId, string> = {
   love: styles.headerCardLove,
   family: styles.headerCardFamily,
-  empathy: styles.headerCardEmpathy,
+  friend: styles.headerCardFriend,
+  work: styles.headerCardWork,
 }
 
 export default function CardDetail({
@@ -31,7 +32,7 @@ export default function CardDetail({
       <section className={styles.card}>
         <div className={styles.topBar}>
           <button className={styles.back} onClick={onBack}>
-            ← 카드 셋 보기
+            ← 카드 넷 보기
           </button>
           <span className={styles.crumb}>채호 MBTI · {meta.label} 카드</span>
         </div>
@@ -83,9 +84,9 @@ export default function CardDetail({
         <ShareBar shareCaption={result.shareCaption} />
 
         <div className={styles.nextStep}>
-          <p className={styles.nextStepTitle}>나머지 두 장 마저 펴봐</p>
+          <p className={styles.nextStepTitle}>나머지 세 장 마저 펴봐</p>
           <p className={styles.nextStepBody}>
-            한 장만 보면 너의 절반밖에 모름. 카드 세 장 다 합쳐야 너의 인덱스.
+            한 장만 보면 너의 1/4밖에 모름. 카드 네 장 다 합쳐야 너의 인덱스.
           </p>
           <button className={styles.nextStepBtn} onClick={onSeeOthers}>
             카드 모자이크로 돌아가기 →

@@ -4,8 +4,8 @@
 
 ## 진입점
 
-- [Landing.tsx](Landing.tsx) — `(없음)` 라우트. 3카드 미리보기 + "테스트 시작" / "데모 결과 미리보기".
-- [Mosaic.tsx](Mosaic.tsx) — `?view=mosaic`. 3장의 카드를 세로로 쌓아 보여줌. 클릭하면 카드별 상세로.
+- [Landing.tsx](Landing.tsx) — `(없음)` 라우트. 4카드 미리보기 + "테스트 시작" / "데모 결과 미리보기".
+- [Mosaic.tsx](Mosaic.tsx) — `?view=mosaic`. 4장의 카드를 세로로 쌓아 보여줌. 클릭하면 카드별 상세로.
 - [CardDetail.tsx](CardDetail.tsx) — `?card=<id>`. 단일 카드의 12블록 결과 + 공유 액션.
 - 각 컴포넌트별 `*.module.css`가 같은 폴더에 동봉.
 

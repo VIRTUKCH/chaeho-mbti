@@ -16,7 +16,8 @@ type Props = {
 const VARIANT_CLASS: Record<CardId, string> = {
   love: styles.cardLove,
   family: styles.cardFamily,
-  empathy: styles.cardEmpathy,
+  friend: styles.cardFriend,
+  work: styles.cardWork,
 }
 
 export default function Mosaic({ results, opened, onOpenCard, onHome }: Props) {
@@ -29,10 +30,10 @@ export default function Mosaic({ results, opened, onOpenCard, onHome }: Props) {
         <div className={styles.header}>
           <span className={styles.tag}>채호 MBTI · 결과 모자이크</span>
           <h1 className={styles.title}>
-            카드 세 장이 너를 기다리고 있어
+            카드 네 장이 너를 기다리고 있어
           </h1>
           <p className={styles.sub}>
-            연애 → 가족 → 공감 순으로 하나씩 눌러서 펼쳐봐.
+            연애 → 가족 → 친구 → 직장(학교) 순으로 하나씩 눌러서 펼쳐봐.
           </p>
         </div>
 

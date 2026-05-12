@@ -23,7 +23,8 @@
   /* 카드 식별 색 (모카 톤 안에서만 미세 변주) */
   --card-love: #b8543e;
   --card-family: #8a6d3b;
-  --card-empathy: #5b6f48;
+  --card-friend: #5b6f48;
+  --card-work: #4d627a;
 
   /* 피드백 */
   --success: #15803d;

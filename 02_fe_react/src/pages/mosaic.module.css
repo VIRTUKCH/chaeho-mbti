@@ -98,8 +98,11 @@
 .cardFamily {
   border-left: 6px solid var(--card-family);
 }
-.cardEmpathy {
-  border-left: 6px solid var(--card-empathy);
+.cardFriend {
+  border-left: 6px solid var(--card-friend);
+}
+.cardWork {
+  border-left: 6px solid var(--card-work);
 }
 
 .cardOpened {
